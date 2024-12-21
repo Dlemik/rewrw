@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marius</title>
+</head>
+<body>
+<style>
+    .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 0.5rem 1rem;
+    color: white;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img {
+    height: 20px;
+}
+
+.logo span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.logo .market {
+    color: #ccc;
+    font-weight: normal;
+}
+
+.buy-now {
+    background-color: #5cb85c;
+    color: white;
+    text-decoration: none;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    
+}
+
+.buy-now:hover {
+    background-color: #4cae4c;
+}
+    
+    .menu-button {
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 60px;
+    height: 50px; 
+    background-color: #333;
+    color: white;
+    border-radius: 1rem 0 0 1rem;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.3s ease;
+    overflow: hidden; 
+
+    }
+
+    .menu-button i {
+     margin-left: 115px;
+    font-size: small;
+    }
+
+
+    .menu-button:hover {
+     width: 180px;
+     background-color: #444; 
+     height: 200px;
+    flex-direction: column;
+    }
+
+
+    .menu-button a {
+     display: block;
+    color: white;
+    text-decoration: none;
+     opacity: 0; 
+    transition: opacity 0.3s ease;
+    margin-top: 10px;
+    }
+
+
+    .menu-button:hover a {
+    opacity: 1;
+    }
+
+
+    .menu-button a:hover {
+     background-color: #555;
+     padding: 5px 10px;
+    border-radius: 5px;
+    }
+
+    .text-section {
+      background-color: white;
+      margin: 50px auto;
+      padding: 30px;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      line-height: 1.8;
+      font-size: 1em;
+      color: #333;
+    }
+    
+    .text-section h2 {
+      font-size: 2em;
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .text-section p {
+      margin-bottom: 20px;
+    }
+    
+    .text-section hr {
+      border: 0;
+      border-top: 1px solid #ddd;
+      margin: 20px 0;
+    }
+    
+    .text-section ul {
+      margin: 20px 0;
+      padding-left: 20px;
+    }
+    
+    .text-section ul li {
+      margin: 10px 0;
+    }
+    
+    .text-section a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    
+    .text-section a:hover {
+      text-decoration: underline;
+    }
+</style>
+    <div class="menu-button">
+        <i class="fas fa-bars"></i> MENU
+        <a href="index.html">Home</a>
+        <a href="stay.html">Style Guide</a>
+        <a href="buy.html">Ask</a>
+    </div>
+<header class="top-header">
+    <div class="logo">
+        <img src="https://public-assets.envato-static.com/assets/icons/favicons/apple-touch-icon-144x144-precomposed-c581101b4f39d1ba1c4a5e45edb6b3418847c5c387b376930c6a9922071c8148.png" alt="Envato Market Logo">
+        <span>envato<span class="market">market</span></span>
+    </div>
+    <a href="buy.html" class="buy-now">Buy now</a>
+</header>
+<div class="text-section">
+    <h2>Style Guide</h2>
+    <p>
+      This is a paragraph. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. <strong>Mauris placerat eleifend leo.</strong> Quisque sit amet est et sapien ullamcorper pharetra.
+    </p>
+    <hr>
+    <p><em>Donec placerat mauris commodo dolor. Nulla tincidunt. Nulla vitae augue. Dicant quaeque nam.</em></p>
+    <ul>
+      <li>Convallis ac mauris</li>
+      <li>Gravida a vestibulum vitae</li>
+      <li>Etiam eu consectetur quam</li>
+      <li>Duis lorem ligula</li>
+      <li>Labores facilisis</li>
+    </ul>
+    <p>
+      Ad eam iriure impetus convenire, quo eu virtute officiis. Pri te illud malis voluptatibus, labores facilisis ei sit, at nam commune oportere. Dicant quaeque nam no. <a href="#">Sample link</a>. Perfecto assentior, no primis dictas aliquando sit. Vix ad utamur appetere, ad has quis scripta explicari.
+    </p>
+  </div>
+  
+</body>
+</html>
